@@ -1,4 +1,4 @@
-package presentation.screens
+package presentation.screens.home
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -16,10 +16,12 @@ import presentation.ui.getColorsTheme
 import presentation.components.AllExpensesHeader
 import presentation.components.ExpensesItem
 import presentation.components.ExpensesTotalHeader
+import presentation.screens.home.state.ExpensesUiState
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ExpensesScreen(
+    uiState: ExpensesUiState,
     onExpenseClick: (expense: Expense) -> Unit
 ) {
     val colors = getColorsTheme()
@@ -30,11 +32,11 @@ fun ExpensesScreen(
     ) {
         stickyHeader {
             Column(modifier = Modifier.background(colors.backgroundColor)) {
-                ExpensesTotalHeader(1023.3)
+                ExpensesTotalHeader(uiState.total)
                 AllExpensesHeader()
             }
         }
-        items(ExpenseManager.fakeExpenseList){ expense ->
+        items(uiState.expenses){ expense ->
             ExpensesItem(expense = expense, onExpenseClick = {onExpenseClick})
         }
     }
