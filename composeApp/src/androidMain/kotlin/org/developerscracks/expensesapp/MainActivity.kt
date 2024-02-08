@@ -1,6 +1,6 @@
 package org.developerscracks.expensesapp
 
-import App
+import ui.App
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun AppAndroidPreview() {
     App()

@@ -1,3 +1,5 @@
+package ui
+
 import androidx.compose.foundation.shape.AbsoluteCutCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
