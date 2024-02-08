@@ -17,12 +17,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.semantics.Role.Companion.Image
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import domain.model.Expense
-import ui.getColorsTheme
+import presentation.ui.getColorsTheme
 
 @Composable
 fun ExpensesItem(expense: Expense, onExpenseClick: (expense:Expense) -> Unit) {

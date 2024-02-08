@@ -1,6 +1,6 @@
 package org.developerscracks.expensesapp
 
-import ui.App
+import presentation.ui.App
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent

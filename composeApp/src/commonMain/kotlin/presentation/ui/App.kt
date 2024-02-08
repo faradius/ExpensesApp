@@ -1,10 +1,8 @@
-package ui
+package presentation.ui
 
 import androidx.compose.runtime.Composable
 import moe.tlaster.precompose.PreComposeApp
-import presentation.ExpensesScreen
-import ui.AppTheme
-import ui.getColorsTheme
+import presentation.screens.ExpensesScreen
 
 
 @Composable
@@ -12,7 +10,7 @@ fun App() {
     PreComposeApp{
         val colors = getColorsTheme()
         AppTheme {
-            ExpensesScreen()
+            ExpensesScreen({})
         }
 
     }

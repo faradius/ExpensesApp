@@ -1,4 +1,4 @@
-package ui
+package presentation.ui
 
 import androidx.compose.foundation.shape.AbsoluteCutCornerShape
 import androidx.compose.material.MaterialTheme
