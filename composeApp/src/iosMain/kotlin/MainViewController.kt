@@ -1,4 +1,4 @@
 import androidx.compose.ui.window.ComposeUIViewController
-import presentation.ui.App
+import presentation.screens.home.HomeScreen
 
-fun MainViewController() = ComposeUIViewController { App() }
+fun MainViewController() = ComposeUIViewController { HomeScreen() }

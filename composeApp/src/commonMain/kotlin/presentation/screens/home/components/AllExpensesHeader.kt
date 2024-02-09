@@ -1,4 +1,4 @@
-package presentation.components
+package presentation.screens.home.components
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding

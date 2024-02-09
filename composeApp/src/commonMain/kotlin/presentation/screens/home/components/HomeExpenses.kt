@@ -1,4 +1,4 @@
-package presentation.screens.home
+package presentation.screens.home.components
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -10,12 +10,11 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import data.datasource.ExpenseManager
 import domain.model.Expense
 import presentation.ui.getColorsTheme
-import presentation.components.AllExpensesHeader
-import presentation.components.ExpensesItem
-import presentation.components.ExpensesTotalHeader
+import presentation.screens.home.components.AllExpensesHeader
+import presentation.screens.home.components.ExpensesItem
+import presentation.screens.home.components.ExpensesTotalHeader
 import presentation.screens.home.state.ExpensesUiState
 
 @OptIn(ExperimentalFoundationApi::class)

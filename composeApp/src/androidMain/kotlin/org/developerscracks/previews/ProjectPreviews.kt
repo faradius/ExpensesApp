@@ -7,10 +7,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import data.datasource.ExpenseManager
-import presentation.screens.home.ExpensesScreen
-import presentation.components.AllExpensesHeader
-import presentation.components.ExpensesItem
-import presentation.components.ExpensesTotalHeader
+import presentation.screens.home.components.AllExpensesHeader
+import presentation.screens.home.components.ExpensesItem
+import presentation.screens.home.components.ExpensesScreen
+import presentation.screens.home.components.ExpensesTotalHeader
 import presentation.screens.home.state.ExpensesUiState
 
 @Preview(showBackground = true)
