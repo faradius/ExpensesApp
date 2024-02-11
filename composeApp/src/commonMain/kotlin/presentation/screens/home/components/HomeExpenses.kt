@@ -36,7 +36,7 @@ fun ExpensesScreen(
             }
         }
         items(uiState.expenses){ expense ->
-            ExpensesItem(expense = expense, onExpenseClick = {onExpenseClick})
+            ExpensesItem(expense = expense, onExpenseClick = onExpenseClick)
         }
     }
 }

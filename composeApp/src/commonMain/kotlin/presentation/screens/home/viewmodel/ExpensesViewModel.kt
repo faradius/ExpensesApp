@@ -1,6 +1,7 @@
 package presentation.screens.home.viewmodel
 
 import domain.model.Expense
+import domain.model.ExpenseCategory
 import domain.repository.ExpenseRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -61,6 +62,10 @@ class ExpensesViewModel(
 
     fun getExpenseWithId(id: Long): Expense {
         return allExpense.first { it.id == id }
+    }
+
+    fun getCategories(): List<ExpenseCategory>{
+        return  repository.getCategories()
     }
 
 }
