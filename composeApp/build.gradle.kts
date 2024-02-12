@@ -49,6 +49,14 @@ kotlin {
             //ViewModel PreCompose
             api("moe.tlaster:precompose-viewmodel:1.5.10")
         }
+
+        iosMain.dependencies {
+
+        }
+
+        commonTest.dependencies {
+            implementation(libs.kotlin.test)
+        }
     }
 }
 
