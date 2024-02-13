@@ -19,6 +19,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import data.datasource.CrossConfigDevice
+import data.datasource.SessionCache
 import moe.tlaster.precompose.PreComposeApp
 import moe.tlaster.precompose.navigation.rememberNavigator
 import org.koin.compose.KoinContext
@@ -30,10 +32,11 @@ import presentation.ui.getColorsTheme
 
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(configDevice: CrossConfigDevice? = null) {
     PreComposeApp {
         KoinContext {
             val colors = getColorsTheme()
+            SessionCache.configDevice = configDevice
 
             AppTheme {
                 val navigator = rememberNavigator()
